@@ -56,4 +56,12 @@ public class Restaurant{
     
         vegetarisch = neuVegetarisch;
     }
+    
+    //print Methode = Ausgabe
+    
+    public void printRestaurant(){
+    
+        System.out.println(name + " Restaurant: " + sitzplaetze + " Sitzplätze - " + vegetarisch);
+    }
+
 }
