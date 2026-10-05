@@ -4,7 +4,7 @@ public class Restaurant{
     private int sitzplaetze;
     private boolean vegetarisch;
     
-    // Getter
+    // Get
     
     public String getName(){
     
@@ -19,5 +19,22 @@ public class Restaurant{
     public boolean getVegetarisch(){
     
         return vegetarisch;
+    }
+    
+    //Set
+    
+    public void setName(String neuName){
+    
+        name = neuName;
+    }
+    
+    public void setSitzplaetze(int neuSitzplaetze){
+    
+        sitzplaetze = neuSitzplaetze;
+    }
+    
+    public void setVegetarisch(boolean neuVegetarisch){
+    
+        vegetarisch = neuVegetarisch;
     }
 }
