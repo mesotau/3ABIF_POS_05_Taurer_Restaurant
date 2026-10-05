@@ -4,6 +4,25 @@ public class Restaurant{
     private int sitzplaetze;
     private boolean vegetarisch;
     
+    //Konstruktor
+    
+    public Restaurant(String neuName, int neuSitzplaetze, boolean neuVegetarisch){
+    
+        setName(neuName);
+        setSitzplaetze(neuSitzplaetze);
+        setVegetarisch(neuVegetarisch);
+    }
+
+    //Default Konstruktor
+    
+    public Restaurant(){
+    
+        setName("UNKN");
+        setSitzplaetze(0);
+        setVegetarisch(false);
+    }
+
+    
     // Get
     
     public String getName(){
