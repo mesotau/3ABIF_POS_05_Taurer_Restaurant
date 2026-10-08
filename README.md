@@ -1,4 +1,4 @@
-´´´
+```
 ┌──────────────────────────────────────┐
 │             Restaurant               │
 ├──────────────────────────────────────┤
@@ -11,7 +11,7 @@
 │+ get/set Methoden                    │
 │+ printRestaurant()                   │
 └──────────────────────────────────────┘
-´´´
+```
 Roma Restaurant: 80 Sitzplaetze - true
 Akropolis Restaurant: 60 Sitzplaetze - true
 Steakhouse Restaurant: 100 Sitzplaetze - false
