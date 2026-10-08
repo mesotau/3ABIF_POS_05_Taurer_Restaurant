@@ -48,8 +48,16 @@ public class Restaurant{
     }
     
     public void setSitzplaetze(int neuSitzplaetze){
-    
-        sitzplaetze = neuSitzplaetze;
+        
+        if((neuSitzplaetze >= 1) && (neuSitzplaetze <= 1000)){
+            
+            sitzplaetze = neuSitzplaetze;
+        }
+        else{
+        
+            System.out.println("Fehler: ungültige Sitzplatzanzahl!");
+            sitzplaetze = 0;
+        }
     }
     
     public void setVegetarisch(boolean neuVegetarisch){
