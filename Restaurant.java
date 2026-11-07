@@ -3,8 +3,21 @@ public class Restaurant{
     private String name;
     private int sitzplaetze;
     private boolean vegetarisch;
+    private boolean lieferdienst;
+    private int tische;
     
-    //Konstruktor
+    //Konstruktor Orignal neu
+    
+    public Restaurant(String name, int sitzplaetze, boolean vegetarisch, boolean lieferdienst, int tische){
+    
+        setName(name);
+        setSitzplaetze(sitzplaetze);
+        setVegetarisch(vegetarisch);
+        setLieferdienst(lieferdienst);
+        setTische(tische);
+    }
+    
+    //Konstruktor Orignal
     
     public Restaurant(String name, int sitzplaetze, boolean vegetarisch){
     
@@ -12,14 +25,48 @@ public class Restaurant{
         setSitzplaetze(sitzplaetze);
         setVegetarisch(vegetarisch);
     }
+    
+    //Konstruktor 03
+    
+    public Restaurant(String name, boolean vegetarisch){
+    
+        setName(name);
+        setVegetarisch(vegetarisch);
+    }
+    
+    //Konstruktor 04 kann nicht weil selbe Signatur wie Konstruktor Original
+    
+    /*public Restaurant(String name, int sitzplaetze, boolean lieferdienst){
+    
+        setName(name);
+        setSitzplaetze(sitzplaetze);
+        setLieferdienst(lieferdienst);
+    }*/
+    
+    //Konstruktor 05
+    
+    public Restaurant(String name, boolean lieferdienst, int sitzplaetze){
+    
+        setName(name);
+        setSitzplaetze(sitzplaetze);
+        setLieferdienst(lieferdienst);
+    }
+    
+    //Konstruktor 06
+    
+    public Restaurant(String name){
+    
+        setName(name);
+    }
 
     //Default Konstruktor
     
     public Restaurant(){
     
         setName("UNKN");
-        setSitzplaetze(0);
+        setSitzplaetze(1);
         setVegetarisch(false);
+        
     }
 
     
@@ -38,6 +85,16 @@ public class Restaurant{
     public boolean getVegetarisch(){
     
         return vegetarisch;
+    }
+    
+    public boolean getLieferdinst(){
+    
+        return lieferdienst;
+    }
+    
+    public int getTische(){
+    
+        return tische;
     }
     
     //Set
@@ -63,6 +120,16 @@ public class Restaurant{
     public void setVegetarisch(boolean vegetarisch){
     
         this.vegetarisch = vegetarisch;
+    }
+    
+    public void setLieferdienst(boolean lieferdienst){
+    
+        this.lieferdienst = lieferdienst;
+    }
+    
+    public void setTische(int tische){
+    
+        this.tische = tische;
     }
     
     //print Methode = Ausgabe
