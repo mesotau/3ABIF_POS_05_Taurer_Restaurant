@@ -6,11 +6,11 @@ public class Restaurant{
     
     //Konstruktor
     
-    public Restaurant(String neuName, int neuSitzplaetze, boolean neuVegetarisch){
+    public Restaurant(String name, int sitzplaetze, boolean vegetarisch){
     
-        setName(neuName);
-        setSitzplaetze(neuSitzplaetze);
-        setVegetarisch(neuVegetarisch);
+        setName(name);
+        setSitzplaetze(sitzplaetze);
+        setVegetarisch(vegetarisch);
     }
 
     //Default Konstruktor
@@ -42,27 +42,27 @@ public class Restaurant{
     
     //Set
     
-    public void setName(String neuName){
+    public void setName(String name){
     
-        name = neuName;
+        this.name = name;
     }
     
-    public void setSitzplaetze(int neuSitzplaetze){
+    public void setSitzplaetze(int sitzplaetze){
         
-        if((neuSitzplaetze >= 1) && (neuSitzplaetze <= 1000)){
+        if((sitzplaetze >= 1) && (sitzplaetze <= 1000)){
             
-            sitzplaetze = neuSitzplaetze;
+            this.sitzplaetze = sitzplaetze;
         }
         else{
         
             System.out.println("Fehler: ungültige Sitzplatzanzahl!");
-            sitzplaetze = 0;
+            this.sitzplaetze = 0;
         }
     }
     
-    public void setVegetarisch(boolean neuVegetarisch){
+    public void setVegetarisch(boolean vegetarisch){
     
-        vegetarisch = neuVegetarisch;
+        this.vegetarisch = vegetarisch;
     }
     
     //print Methode = Ausgabe
